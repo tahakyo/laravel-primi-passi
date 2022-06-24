@@ -35,6 +35,10 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
-// Route::get('/primo link', function() {
-//     return view ('firstLink');
-// })->name('firstLink'); 
+Route::get('/first-link', function() {
+    return view ('firstLink');
+})->name('link1');
+
+Route::get('/second-link', function() {
+    return view ('secondLink');
+})->name('link2'); 

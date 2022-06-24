@@ -7,7 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-
   <header>
     <ul>
       <li><a href="{{ route('home') }}">Home</a></li>
@@ -15,10 +14,9 @@
       <li><a href="{{ route('link2') }}">Link#2</a></li>
     </ul>
   </header>
-
   <main>
     
-    <h1>Sono il primo link</h1>
+    <h1>Sono il secondo link</h1>
 
   </main>
 </body>
