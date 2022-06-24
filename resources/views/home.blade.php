@@ -9,6 +9,14 @@
 <body>
   <h1>Hello World</h1>
 
-  <p>Ciao {{ $name }} ecco i tuoi primi passi con Laravel</p>
+  <p>Ciao {{ $name }} {{ $lastName }} ecco i tuoi primi passi con Laravel</p>
+
+  {{-- se l'utente è taha scrivo il suo nome e cognome altrimenti scrivo 'accesso negato'--}}
+
+  @if ($userVerify)
+   <p>{{ $name }} {{ $lastName }}</p>
+  @else 
+    <p>Accesso negato</p>   
+  @endif
 </body>
 </html>

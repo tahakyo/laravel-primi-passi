@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'name' => 'Taha',
-        'lastName' => 'Ghazouani'
+        'lastName' => 'Ghazouani',
+        'userVerify' => false
     ];
     return view('home', $data);
 })->name('home');
