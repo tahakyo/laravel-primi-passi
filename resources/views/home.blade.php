@@ -18,5 +18,16 @@
   @else 
     <p>Accesso negato</p>   
   @endif
+
+  {{-- stampo userInfos usando il ciclo Foreach --}}
+  <ul>
+    @foreach ($userInfos as $user)
+      <h3>Infos utente</h3>
+      <li> Data di nascità: {{ $user['dataDiNascità'] }}</li>
+      <li> Origine : {{ $user['origine'] }}</li>
+      <li> Città : {{ $user['città'] }}</li>
+    @endforeach
+  </ul>
+
 </body>
 </html>

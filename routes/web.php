@@ -18,7 +18,19 @@ Route::get('/', function () {
     $data = [
         'name' => 'Taha',
         'lastName' => 'Ghazouani',
-        'userVerify' => false
+        'userVerify' => false,
+        'userInfos' => [
+            [ 
+                'dataDiNascità' => '08/11/1988',
+                'origine' => 'Tunisia',
+                'città' => 'Venezia'
+            ],
+            [ 
+                'dataDiNascità' => 'test-user-dob',
+                'origine' => 'tes-user-origin',
+                'città' => 'test-user-city'
+            ]
+        ]
     ];
     return view('home', $data);
 })->name('home');
