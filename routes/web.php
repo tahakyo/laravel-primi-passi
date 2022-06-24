@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\RouteBinding;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/first-link', function() {
+    return view ('first-link');
+}); 
