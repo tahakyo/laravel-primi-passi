@@ -7,8 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello World</h1>
-
-  <p>Ciao {{ $name }} ecco i tuoi primi passi con Laravel</p>
+  <h1>Sono first link</h1>
 </body>
 </html>
